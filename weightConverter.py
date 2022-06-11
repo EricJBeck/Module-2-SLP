@@ -1,8 +1,8 @@
 weight = int(input('Weight: '))
-unit = input('(L)bs or (K)g: ')
-if unit.upper() == "L":
-    converted = weight * 0.45
-    print(f'You are {converted} kilos')
+unit = input('(G)allons or (L)iters: ')
+if unit.upper() == "G":
+    converted = weight * 3.79
+    print(f'You are {converted} Liters')
 else:
-    converted = weight / 0.45
-    print(f'You are {converted} pounds')
+    converted = weight / 3.79
+    print(f'You are {converted} Gallons')
